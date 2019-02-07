@@ -100,3 +100,11 @@ svg {
   stroke-width: 4;
   fill: #FFF;
 }
+
+
+#profile .row > div { margin-bottom: 20px; }
+#profile .row > div img { width: 100%; max-width: 246px; height: auto; }
+
+#profile-pic {
+  border-radius: 50%;
+}
