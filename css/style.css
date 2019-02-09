@@ -7,13 +7,14 @@ body {
   font-family: "Roboto", "Helvetica", "Arial", sans-serif;
   line-height: 1.5;
   color: #566b78;
+  position: relative;
 }
 
 
 p.lead {
   text-align: center;
-  color: #727878;
-  font-size: 2rem;
+  color: #9c9c9c;
+  font-size: 3rem;
 }
 
 p.lead a {
@@ -45,7 +46,7 @@ header {
   background-repeat: no-repeat;
   background-size: cover;
   line-height: 1.2;
-  padding: 10vw 2em;
+  padding: 5vw 2em;
   margin: 0 auto;
   padding: 0 auto;
   text-align: center;
@@ -56,7 +57,7 @@ header {
 
 
 .background-white {
-  background: #FFFFFF;
+  background: #f3efe0;
 }
 
 .background-gray {
@@ -65,7 +66,7 @@ header {
 
 .container {
   max-width: 1280px;
-  padding: 40px 180px;
+  padding: 30px 200px;
 }
 
 header img {
@@ -77,7 +78,7 @@ header img {
 
 header h1 {
   color: white;
-  font-size: 2.5em;
+  font-size: 4em;
   font-weight: 300;
 }
 
@@ -85,7 +86,7 @@ header a {
   border: 1px solid;
   border-radius: 290486px;
   color: white;
-  font-size: 0.6em;
+  font-size: 1.5rem;
   letter-spacing: 0.2em;
   padding: 1em 2em;
   text-transform: uppercase;
@@ -100,8 +101,8 @@ header a:hover {
 }
 
 h2 {
-  margin-top: 1em;
-  padding-top: 1em;
+  margin-top: 0;
+  padding-top: 0;
 }
 
 h1,
@@ -153,6 +154,10 @@ svg {
   fill: #FFF;
 }
 
+.card {
+  margin-top: 5px;
+}
+
 #profile .row>div {
   margin-bottom: 20px;
 }
@@ -196,11 +201,6 @@ svg {
 }
 
 
-.icon { display: inline-block; background: url(images/sm_icon_sprite.png) no-repeat; height: 32px; width: 32px; }
-.icon.icon-twitter { background-position: 0px 0px; }
-.icon.icon-linkedin { background-position: 0px -32px; }
-.icon.icon-skype { background-position: 0px -64px; }
-.icon.icon-email { background-position: 0px -96px; }
 
 .jumbotron .container {
   position: relative;
@@ -287,64 +287,148 @@ svg {
 }
 
 
-#contact { padding-bottom: 200px; }
-#contact h2, #contact .row * { color: #FFFFFF; }
-#contact a { display: block; line-height: 32px; margin-bottom: 20px; opacity: 0.6; filter:alpha(opacity=60);  }
-#contact a .icon { float: left; margin-right: 20px; }
-#contact a:hover { opacity: 1; filter:alpha(opacity=100); text-decoration: none; }
+#contact {
+  padding-bottom: 200px;
+}
+
+#contact h2,
+#contact .row * {
+  color: #FFFFFF;
+}
+
+
+
+#contact a {
+  font-family: 'Open Sans', sans-serif !important;
+  font-size: 1.5rem;
+  display: block;
+  line-height: 32px;
+  margin-bottom: 20px;
+  opacity: 0.6;
+  filter: alpha(opacity=60);
+}
+
+#contact a .icon {
+  float: left;
+  margin-right: 20px;
+}
+
+#contact a:hover {
+  opacity: 1;
+  filter: alpha(opacity=100);
+  text-decoration: none;
+}
 
 .opl {
-	position:absolute;
-	top:100px;
-	left:0px;
-	z-index:99999;
+  position: absolute;
+  top: 100px;
+  left: 0px;
+  z-index: 99999;
 }
 
 .opl a {
-	width:73px;
-	height:56px;
-	text-indent:-9999px;
-	display:block;
-	background:url('https://s3.amazonaws.com/onepagelove/one-page-love-award.png') no-repeat;
+  width: 73px;
+  height: 56px;
+  text-indent: -9999px;
+  display: block;
+  background: url('https://s3.amazonaws.com/onepagelove/one-page-love-award.png') no-repeat;
 }
 
 /* Media */
 
 
-@media (max-width: 767px) { 
-	.jumbotron:before {
-		bottom: 100px;
-		left: 20px;
-		right: 20px;
-		top: 20px;		
-	}
-	.jumbotron .container { top: 20%; padding-top: 0px; }
-	.jumbotron .scroll-down { width: 100%; right: 0px; }
-	
-	.navbar  { left: 0px; width: 100%; }
-	.navbar .nav > li { height: 60px; }
-	.navbar .nav > li a { height: 60px; text-align: center; padding-top: 20px; font-weight: 600; color: #FFFFFF; }
-	
-	.fixed .navbar { top: 0px; }
-	
-	.container { padding: 60px 20px; min-width: 280px; }
-	.hidden-phone { display: none; }
-	
-	#profile .row * { text-align: center; }
-	
-	#experiences .experience .experience-details > span { display: block; margin-bottom: 6px; }
-	#experiences .experience .experience-details .seperator { display: none; }
-	
-	#interests .left { float: none; }
-	#interests .right { float: none; }
-	
-	#interests > * { text-align: center; }
-	#interests img { width: 50%; height: auto; float: none !important; } 
-	#interests .interest-content { padding: 20px 0px; }
-	
-	#contact { padding-bottom: 60px; }
-	#contact a .icon { float: left; margin-right: 10px; }
-}    
+@media (max-width: 767px) {
+  .jumbotron:before {
+    bottom: 100px;
+    left: 20px;
+    right: 20px;
+    top: 20px;
+  }
+
+  .jumbotron .container {
+    top: 20%;
+    padding-top: 0px;
+  }
+
+  .jumbotron .scroll-down {
+    width: 100%;
+    right: 0px;
+  }
+
+  .navbar {
+    left: 0px;
+    width: 100%;
+  }
+
+  .navbar .nav>li {
+    height: 60px;
+  }
+
+  .navbar .nav>li a {
+    height: 60px;
+    text-align: center;
+    padding-top: 20px;
+    font-weight: 600;
+    color: #FFFFFF;
+  }
+
+  .fixed .navbar {
+    top: 0px;
+  }
+
+  .container {
+    padding: 60px 20px;
+    min-width: 280px;
+  }
+
+  .hidden-phone {
+    display: none;
+  }
+
+  #profile .row * {
+    text-align: center;
+  }
+
+  #experiences .experience .experience-details>span {
+    display: block;
+    margin-bottom: 6px;
+  }
+
+  #experiences .experience .experience-details .seperator {
+    display: none;
+  }
+
+  #interests .left {
+    float: none;
+  }
+
+  #interests .right {
+    float: none;
+  }
+
+  #interests>* {
+    text-align: center;
+  }
+
+  #interests img {
+    width: 50%;
+    height: auto;
+    float: none !important;
+  }
+
+  #interests .interest-content {
+    padding: 20px 0px;
+  }
+
+  #contact {
+    padding-bottom: 60px;
+  }
+
+  #contact a .icon {
+    float: left;
+    margin-right: 10px;
+  }
+}
 
 /* Animation */
 
@@ -366,74 +450,74 @@ svg {
 /***** EFFECT *****/
 
 figure.effect {
-	background: #22A39F;
-	color: #FFF;
+  background: #22A39F;
+  color: #FFF;
 }
 
 figure.effect img {
-	width: -webkit-calc(100% + 20px);
-	width: calc(100% + 20px);
-	-webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
-	transition: opacity 0.35s, transform 0.35s;
-	-webkit-transform: translate3d(-10px,0,0);
-	transform: translate3d(-10px,0,0);
-	-webkit-backface-visibility: hidden;
-	backface-visibility: hidden;
+  width: -webkit-calc(100% + 20px);
+  width: calc(100% + 20px);
+  -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+  transition: opacity 0.35s, transform 0.35s;
+  -webkit-transform: translate3d(-10px, 0, 0);
+  transform: translate3d(-10px, 0, 0);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
 }
 
 figure.effect:hover img {
-	opacity: 0.2;
-	-webkit-transform: translate3d(0,0,0);
-	transform: translate3d(0,0,0);
+  opacity: 0.2;
+  -webkit-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
 }
 
 figure.effect figcaption {
-	text-align: left;
+  text-align: left;
 }
 
 figure.effect h3 {
-	position: relative;
-	overflow: hidden;
-	padding-bottom: 20px;
-	opacity: 0;
-	-webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
-	transition: opacity 0.35s, transform 0.35s;
+  position: relative;
+  overflow: hidden;
+  padding-bottom: 20px;
+  opacity: 0;
+  -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+  transition: opacity 0.35s, transform 0.35s;
 }
 
 figure.effect:hover h3 {
-	opacity: 1;
+  opacity: 1;
 }
 
 figure.effect h3::after {
-	position: absolute;
-	bottom: 0;
-	left: 0;
-	width: 100%;
-	height: 2px;
-	background: #fff;
-	content: '';
-	-webkit-transition: -webkit-transform 0.35s;
-	transition: transform 0.35s;
-	-webkit-transform: translate3d(-100%,0,0);
-	transform: translate3d(-100%,0,0);
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background: #fff;
+  content: '';
+  -webkit-transition: -webkit-transform 0.35s;
+  transition: transform 0.35s;
+  -webkit-transform: translate3d(-100%, 0, 0);
+  transform: translate3d(-100%, 0, 0);
 }
 
 figure.effect:hover h3::after {
-	-webkit-transform: translate3d(0,0,0);
-	transform: translate3d(0,0,0);
+  -webkit-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
 }
 
 figure.effect p {
-	padding-top: 10px;
-	opacity: 0;
-	-webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
-	transition: opacity 0.35s, transform 0.35s;
-	-webkit-transform: translate3d(100%,0,0);
-	transform: translate3d(100%,0,0);
+  padding-top: 10px;
+  opacity: 0;
+  -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+  transition: opacity 0.35s, transform 0.35s;
+  -webkit-transform: translate3d(100%, 0, 0);
+  transform: translate3d(100%, 0, 0);
 }
 
 figure.effect:hover p {
-	opacity: 1;
-	-webkit-transform: translate3d(0,0,0);
-	transform: translate3d(0,0,0);
+  opacity: 1;
+  -webkit-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
 }

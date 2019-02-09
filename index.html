@@ -6,21 +6,48 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css">
-    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
+        crossorigin="anonymous">
     <link href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css" rel="stylesheet">
     <link rel="stylesheet" href="./css/style.css">
     <title>Jordan Spangenberg - Software Developer - Interactive Resume</title>
 </head>
 
-<body>
-    <header class="masthead">
+<body data-spy="scroll" data-target="#myScrollspy" data-offset="20">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+        <a class="navbar-brand" href="#">jspangenberg</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav"
+            aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#home">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#profile">Profile</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#abilities">Abilities</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#projects">Projects</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#contact" tabindex="-1" aria-disabled="true">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <header class="masthead" id="home">
         <div class="container h-100">
             <div class="row h-100 align-items-center">
                 <div class="col-12 text-center">
-                    <h1 class="font-weight-light">Jordan Spangenberg - Software Developer</h1>
+                    <h1 class="font-weight-light">Jordan Spangenberg <br> Software Developer</h1>
                     <p class="lead">Portfolio Website</p>
                     <p>
-                        <a class="fa fa-github" href="https://www.github.com/jordanspangenberg" target="_blank">GitHub
+                        <a class="fab fa-github" href="https://www.github.com/jordanspangenberg" target="_blank">GitHub
                             Profile</a>
                     </p>
                 </div>
@@ -61,158 +88,218 @@
                     <strong>Location:</strong><br />
                     Oregon </p>
 
-                <a href="https://twitter.com/Spankyy___" class="twitter-follow-button" data-show-count="false"
-                    data-size="large" data-show-screen-name="false">Follow @Spankyy___</a>
-                <script>
-                    ! function (d, s, id) {
-                        var js, fjs = d.getElementsByTagName(s)[0],
-                            p = /^http:/.test(d.location) ? 'http' : 'https';
-                        if (!d.getElementById(id)) {
-                            js = d.createElement(s);
-                            js.id = id;
-                            js.src = p + '://platform.twitter.com/widgets.js';
-                            fjs.parentNode.insertBefore(js, fjs);
-                        }
-                    }(document, 'script', 'twitter-wjs');
-                </script>
             </div>
         </div>
     </div>
+    <div class="background-white">
+        <div id="experiences" class="container">
+            <h2>Experiences</h2>
+            <p class="lead">
+                &ldquo;Somewhere, something incredible is waiting to be known.&rdquo;<br />- Carl Sagan
+            </p>
 
-    <div id="experiences" class="container">
-        <h2>Experiences</h2>
-        <p class="lead">
-            &ldquo;Protons give an atom its identity, electrons its personality.&rdquo;<br />- Bill Bryson, A short
-            history of nearly everything
-        </p>
-
-        <hr />
-
-
-        <h3>Educations</h3>
+            <hr />
 
 
-        <div class="experiences">
+            <h3>Educations</h3>
 
 
-            <div class="experience row">
-                <div class="col-md-4">
-                    <h4>The Tech Academy</h4>
-                    <p class="experience-period">
-                        Jan 2019 -
-                    </p>
-                </div>
-                <div class="col-md-8">
-                    <p>
-                        <strong>Software Development Bootcamp</strong>
-                        <span class="hidden-phone">
-                            Learned the skills to become a junior developer who can perform the expected functions required in web and software development of an entry-level developer. </span>
+            <div class="experiences">
+
+
+                <div class="experience row">
+                    <div class="col-md-4">
+                        <h4>The Tech Academy</h4>
+                        <p class="experience-period">
+                            Jan 2019 -
+                        </p>
+                    </div>
+                    <div class="col-md-8">
+                        <span>
+                            <a class="btn btn-primary hidden-phone" data-toggle="collapse" href="#collapseTechAcademy"
+                                role="button" aria-expanded="false" aria-controls="collapseTechAcademy">
+                                <i class="fas fa-arrow-down"></i>
+                            </a>
+                            <strong>Software Development Bootcamp</strong>
+                        </span>
+                        <div class="hidden-phone">
+                            <div class="collapse" id="collapseTechAcademy">
+                                <div class="card card-body">
+                                    Learned the skills to become a junior developer who can perform the expected
+                                    functions
+                                    required in web and software development of an entry-level developer.
+                                </div>
+                            </div>
+                        </div>
                         <span class="experience-details">
                             <span class="location">
                                 <span class="glyphicon glyphicon-map-marker"></span>
                                 Portland, Oregon &amp; Online </span>
                         </span>
-                    </p>
+                    </div>
                 </div>
-            </div>
 
 
-            <div class="experience row">
-                <div class="col-md-4">
-                    <h4>Blue Mountain Community College</h4>
-                    <p class="experience-period">
-                        Aug 2017 -
-                        Jan 2019 </p>
-                </div>
-                <div class="col-md-8">
-                    <p>
-                        <strong>Computer Science</strong>
-                        <span class="hidden-phone">
-                            The curriculum was mostly in Java and C. We learned OOP, design patterns, and data structures and algorithms. </span>
+                <div class="experience row">
+                    <div class="col-md-4">
+                        <h4>Blue Mountain Community College</h4>
+                        <p class="experience-period">
+                            Aug 2017 -
+                            Jan 2019
+                        </p>
+                    </div>
+                    <div class="col-md-8">
+                        <span>
+                            <a class="btn btn-primary hidden-phone" data-toggle="collapse" href="#collapseBMCC" role="button"
+                                aria-expanded="false" aria-controls="collapseBMCC">
+                                <i class="fas fa-arrow-down"></i>
+                            </a>
+                            <strong>Computer Science</strong>
+                        </span>
+                        <div class="hidden-phone">
+                            <div class="collapse" id="collapseBMCC">
+                                <div class="card card-body">
+                                    The curriculum was mostly in Java and C. We learned OOP, design patterns, and data
+                                    structures and algorithms.
+                                </div>
+                            </div>
+                        </div>
                         <span class="experience-details">
                             <span class="location">
                                 <span class="glyphicon glyphicon-map-marker"></span>
-                                Hermiston, Oregon </span>
+                                Hermiston, Oregon
+                            </span>
                         </span>
-                    </p>
+                    </div>
                 </div>
-            </div>
 
 
-            <div class="experience row">
-                <div class="col-md-4">
-                    <h4>Hermiston High School</h4>
-                    <p class="experience-period">
-                        Aug 2005 -
-                        Jun 2009 </p>
-                </div>
-                <div class="col-md-8">
-                    <p>
-                        <strong>Highschool </strong>
-                        <span class="hidden-phone">
-                            I graduated highschool, where I enjoyed doing science, math, audio-visual production, and presentation. I participated in the Tech Club, helping the IT department maintain and troubleshoot computer systems. We also visited electronic recycling centers to disassemble and sort electronic components. </span>
+                <div class="experience row">
+                    <div class="col-md-4">
+                        <h4>Hermiston High School</h4>
+                        <p class="experience-period">
+                            Aug 2005 -
+                            Jun 2009
+                        </p>
+                    </div>
+                    <div class="col-md-8">
+                        <span>
+                            <a class="btn btn-primary hidden-phone" data-toggle="collapse" href="#collapseHHS" role="button"
+                                aria-expanded="false" aria-controls="collapseHHS">
+                                <i class="fas fa-arrow-down"></i>
+                            </a>
+                            <strong>High School</strong>
+                        </span>
+                        <div class="hidden-phone">
+                            <div class="collapse" id="collapseHHS">
+                                <div class="card card-body">
+                                    I graduated highschool, where I enjoyed doing science, math, audio-visual
+                                    production,
+                                    and
+                                    presentation. I participated in the Tech Club, helping the IT department maintain
+                                    and
+                                    troubleshoot computer systems. We also visited electronic recycling centers to
+                                    disassemble
+                                    and sort electronic components.
+                                </div>
+                            </div>
+                        </div>
                         <span class="experience-details">
                             <span class="location">
                                 <span class="glyphicon glyphicon-map-marker"></span>
-                                Hermiston, Oregon </span>
+                                Hermiston, Oregon
+                            </span>
                         </span>
-                    </p>
+                    </div>
                 </div>
+
+
             </div>
 
 
-        </div>
+
+            <hr />
+
+            <h3>Careers</h3>
 
 
+            <div class="experiences">
 
-        <hr />
-
-        <h3>Careers</h3>
-
-
-        <div class="experiences">
-
-            <div class="experience row">
-                <div class="col-md-4">
-                    <h4>True North Psychiatric Solutions</h4>
-                    <p class="experience-period">
-                        Sep 2017 -
-                        Jan 2019 </p>
-                </div>
-                <div class="col-md-8">
-                    <p>
+                <div class="experience row">
+                    <div class="col-md-4">
+                        <h4>True North Psychiatric Solutions</h4>
+                        <p class="experience-period">
+                            Sep 2017 -
+                            Jan 2019 </p>
+                    </div>
+                    <div class="col-md-8">
+                        <a class="btn btn-primary hidden-phone" data-toggle="collapse" href="#collapseTNPS" role="button"
+                            aria-expanded="false" aria-controls="collapseTNPS">
+                            <i class="fas fa-arrow-down"></i>
+                        </a>
                         <strong>Office Administrator</strong>
-                        <span class="hidden-phone">
-                            I developed a Java script to automate the creation of PDF documents for the business, saving 500+ hours per year. <br><br>Develop and maintain computerized record management systems to store and process data, such as personnel activities and information, and to produce reports.
-                            Develop and implement organizational policies and procedures for the facility or medical unit.  Conduct and administer fiscal operations, including accounting, planning budgets, authorizing expenditures, establishing rates for services, and coordinating financial reporting.
-                            Prepare activity reports to inform management of the status and implementation plans of programs, services, and quality initiatives.
-                            Review and analyze facility activities and data to aid planning and cash and risk management and to improve service utilization.
-                            Manage change in integrated health care delivery systems, such as work restructuring, technological innovations, and shifts in the focus of care.
-                                 </span>
+                        <div class="collapse" id="collapseTNPS">
+                            <div class="card card-body">
+                                <span class="hidden-phone">
+                                    I developed a Java script to automate the creation of PDF documents for the
+                                    business,
+                                    saving 500+ hours per year. <br><br>Develop and maintain computerized record
+                                    management
+                                    systems to store and process data, such as personnel activities and information,
+                                    and to
+                                    produce reports.
+                                    Develop and implement organizational policies and procedures for the facility or
+                                    medical
+                                    unit. Conduct and administer fiscal operations, including accounting, planning
+                                    budgets,
+                                    authorizing expenditures, establishing rates for services, and coordinating
+                                    financial
+                                    reporting.
+                                    Prepare activity reports to inform management of the status and implementation
+                                    plans of
+                                    programs, services, and quality initiatives.
+                                    Review and analyze facility activities and data to aid planning and cash and risk
+                                    management and to improve service utilization.
+                                    Manage change in integrated health care delivery systems, such as work
+                                    restructuring,
+                                    technological innovations, and shifts in the focus of care.
+                                </span>
+                            </div>
+                        </div>
                         <span class="experience-details">
                             <span class="location">
                                 <span class="glyphicon glyphicon-map-marker"></span>
                                 Hermiston, Oregon </span>
                         </span>
-                    </p>
+                    </div>
                 </div>
-            </div>
 
 
-            <div class="experience row">
-                <div class="col-md-4">
-                    <h4>High Desert Cannabis</h4>
-                    <p class="experience-period">
-                        Jun 2017 -
-                        Jul 2018 </p>
-                </div>
-                <div class="col-md-8">
-                    <p>
+                <div class="experience row">
+                    <div class="col-md-4">
+                        <h4>High Desert Cannabis</h4>
+                        <p class="experience-period">
+                            Jun 2017 -
+                            Jul 2018 </p>
+                    </div>
+                    <div class="col-md-8">
+                        <a class="btn btn-primary hidden-phone" data-toggle="collapse" href="#collapseHDC" role="button"
+                            aria-expanded="false" aria-controls="collapseHDC">
+                            <i class="fas fa-arrow-down"></i>
+                        </a>
                         <strong>Shift Lead</strong>
-                        <span class="hidden-phone">
-                            Direct and supervise the sale, preparation, and storage of product. Performed market and price analysis to optimize pricing and sales strategy. 
-                            Optimize preparation processes and sales procedures. Maintain and ensure regulatory compliance and minimize liability. 
-                        </span>
+                        <div class="collapse" id="collapseHDC">
+                            <div class="card card-body">
+                                <span class="hidden-phone">
+                                    Direct and supervise the sale, preparation, and storage of product. Performed
+                                    market
+                                    and
+                                    price analysis to optimize pricing and sales strategy.
+                                    Optimize preparation processes and sales procedures. Maintain and ensure regulatory
+                                    compliance and minimize liability.
+                                </span>
+                            </div>
+                        </div>
                         <span class="experience-details">
                             <span class="location">
                                 <span class="glyphicon glyphicon-map-marker"></span>
@@ -220,23 +307,31 @@
 
 
                         </span>
-                    </p>
+                    </div>
                 </div>
-            </div>
 
 
-            <div class="experience row">
-                <div class="col-md-4">
-                    <h4>Pizza Hut</h4>
-                    <p class="experience-period">
-                        Aug 2013 -
-                        Sep 2017 </p>
-                </div>
-                <div class="col-md-8">
-                    <p>
+                <div class="experience row">
+                    <div class="col-md-4">
+                        <h4>Pizza Hut</h4>
+                        <p class="experience-period">
+                            Aug 2013 -
+                            Sep 2017 </p>
+                    </div>
+                    <div class="col-md-8">
+                        <a class="btn btn-primary hidden-phone" data-toggle="collapse" href="#collapsePH" role="button"
+                            aria-expanded="false" aria-controls="collapsePH">
+                            <i class="fas fa-arrow-down"></i>
+                        </a>
                         <strong>Delivery Driver</strong>
-                        <span class="hidden-phone">
-                            Take orders, attend to customers, prepare food, and deliver orders quickly and safely. </span>
+                        <div class="collapse" id="collapsePH">
+                            <div class="card card-body">
+                                <span class="hidden-phone">
+                                    Take orders, attend to customers, prepare food, and deliver orders quickly and
+                                    safely.
+                                </span>
+                            </div>
+                        </div>
                         <span class="experience-details">
                             <span class="location">
                                 <span class="glyphicon glyphicon-map-marker"></span>
@@ -244,18 +339,17 @@
 
 
                         </span>
-                    </p>
+                    </div>
                 </div>
+
+
             </div>
 
-
         </div>
-
     </div>
-
     <!--Skills and Languages-->
 
-    <div class="background-white">
+    <div class="">
         <div id="abilities" class="container">
             <h2>Abilities</h2>
             <p class="lead">
@@ -396,28 +490,7 @@
                             </span>
                         </li>
 
-                        <li>
-                            <span class="ability-title">XML</span>
-                            <span class="ability-score">
 
-
-                                <span class="glyphicon glyphicon-star filled"></span>
-
-
-                                <span class="glyphicon glyphicon-star filled"></span>
-
-
-                                <span class="glyphicon glyphicon-star filled"></span>
-
-
-                                <span class="glyphicon glyphicon-star filled"></span>
-
-
-                                <span class="glyphicon glyphicon-star filled"></span>
-
-
-                            </span>
-                        </li>
 
                         <li>
                             <span class="ability-title">Command line Inteface</span>
@@ -549,55 +622,6 @@
 
 
 
-                        <li>
-                            <span class="ability-title">SASS / SCSS</span>
-                            <span class="ability-score">
-
-
-                                <span class="glyphicon glyphicon-star filled"></span>
-
-
-                                <span class="glyphicon glyphicon-star filled"></span>
-
-
-                                <span class="glyphicon glyphicon-star filled"></span>
-
-
-                                <span class="glyphicon glyphicon-star filled"></span>
-
-
-                                <span class="glyphicon glyphicon-star "></span>
-
-
-                            </span>
-                        </li>
-
-
-
-                        <li>
-                            <span class="ability-title">SEO</span>
-                            <span class="ability-score">
-
-
-                                <span class="glyphicon glyphicon-star filled"></span>
-
-
-                                <span class="glyphicon glyphicon-star filled"></span>
-
-
-                                <span class="glyphicon glyphicon-star filled"></span>
-
-
-                                <span class="glyphicon glyphicon-star filled"></span>
-
-
-                                <span class="glyphicon glyphicon-star "></span>
-
-
-                            </span>
-                        </li>
-
-
 
                         <li>
                             <span class="ability-title">Agile</span>
@@ -622,30 +646,6 @@
                             </span>
                         </li>
 
-
-
-                        <li>
-                            <span class="ability-title">Singleton Pattern</span>
-                            <span class="ability-score">
-
-
-                                <span class="glyphicon glyphicon-star filled"></span>
-
-
-                                <span class="glyphicon glyphicon-star filled"></span>
-
-
-                                <span class="glyphicon glyphicon-star filled"></span>
-
-
-                                <span class="glyphicon glyphicon-star filled"></span>
-
-
-                                <span class="glyphicon glyphicon-star "></span>
-
-
-                            </span>
-                        </li>
 
 
                         <li>
@@ -757,85 +757,8 @@
                             </span>
                         </li>
 
-
-
-                        <li>
-                            <span class="ability-title">Firefox (10+ years)</span>
-                            <span class="ability-score">
-
-
-                                <span class="glyphicon glyphicon-star filled"></span>
-
-
-                                <span class="glyphicon glyphicon-star filled"></span>
-
-
-                                <span class="glyphicon glyphicon-star filled"></span>
-
-
-                                <span class="glyphicon glyphicon-star filled"></span>
-
-
-                                <span class="glyphicon glyphicon-star filled"></span>
-
-
-                            </span>
-                        </li>
-
-
-
-                        <li>
-                            <span class="ability-title">MS Office (10+ years)</span>
-                            <span class="ability-score">
-
-
-                                <span class="glyphicon glyphicon-star filled"></span>
-
-
-                                <span class="glyphicon glyphicon-star filled"></span>
-
-
-                                <span class="glyphicon glyphicon-star filled"></span>
-
-
-                                <span class="glyphicon glyphicon-star filled"></span>
-
-
-                                <span class="glyphicon glyphicon-star filled"></span>
-
-
-                            </span>
-                        </li>
-
-
-
                         <li>
                             <span class="ability-title">Linux (3 years)</span>
-                            <span class="ability-score">
-
-
-                                <span class="glyphicon glyphicon-star filled"></span>
-
-
-                                <span class="glyphicon glyphicon-star filled"></span>
-
-
-                                <span class="glyphicon glyphicon-star filled"></span>
-
-
-                                <span class="glyphicon glyphicon-star filled"></span>
-
-
-                                <span class="glyphicon glyphicon-star filled"></span>
-
-
-                            </span>
-                        </li>
-
-
-
-                        <li>
-                            <span class="ability-title">Notepad++ (3 years)</span>
                             <span class="ability-score">
 
 
@@ -880,30 +803,6 @@
                             </span>
                         </li>
 
-
-
-                        <li>
-                            <span class="ability-title">Windows (10+ years)</span>
-                            <span class="ability-score">
-
-
-                                <span class="glyphicon glyphicon-star filled"></span>
-
-
-                                <span class="glyphicon glyphicon-star filled"></span>
-
-
-                                <span class="glyphicon glyphicon-star filled"></span>
-
-
-                                <span class="glyphicon glyphicon-star filled"></span>
-
-
-                                <span class="glyphicon glyphicon-star filled"></span>
-
-
-                            </span>
-                        </li>
 
                     </ul>
                 </div>
@@ -960,31 +859,6 @@
                             </span>
                         </li>
 
-
-
-                        <li>
-                            <span class="ability-title">Internet Explore 10+ (8 years)</span>
-                            <span class="ability-score">
-
-
-                                <span class="glyphicon glyphicon-star filled"></span>
-
-
-                                <span class="glyphicon glyphicon-star filled"></span>
-
-
-                                <span class="glyphicon glyphicon-star filled"></span>
-
-
-                                <span class="glyphicon glyphicon-star filled"></span>
-
-
-                                <span class="glyphicon glyphicon-star "></span>
-
-
-                            </span>
-                        </li>
-
                         <li>
                             <span class="ability-title">Sublime Text (2 years)</span>
                             <span class="ability-score">
@@ -1009,28 +883,6 @@
                         </li>
 
 
-                        <li>
-                            <span class="ability-title">Adobe XD CC (1 year)</span>
-                            <span class="ability-score">
-
-
-                                <span class="glyphicon glyphicon-star filled"></span>
-
-
-                                <span class="glyphicon glyphicon-star filled"></span>
-
-
-                                <span class="glyphicon glyphicon-star filled"></span>
-
-
-                                <span class="glyphicon glyphicon-star "></span>
-
-
-                                <span class="glyphicon glyphicon-star "></span>
-
-
-                            </span>
-                        </li>
 
                         <li>
                             <span class="ability-title">VI/VIM (3 years)</span>
@@ -1043,10 +895,10 @@
                                 <span class="glyphicon glyphicon-star filled"></span>
 
 
-                                <span class="glyphicon glyphicon-star "></span>
+                                <span class="glyphicon glyphicon-star filled"></span>
 
 
-                                <span class="glyphicon glyphicon-star "></span>
+                                <span class="glyphicon glyphicon-star filled"></span>
 
 
                                 <span class="glyphicon glyphicon-star "></span>
@@ -1060,24 +912,24 @@
         </div>
         <!--Projects-->
 
+        <div class="background-white">
+            <div id="projects" class="container">
+                <h2>Projects</h2>
+                <p class="lead">
+                    &ldquo;You can do anything you set your mind to.&rdquo;<br />- Benjamin Franklin
+                </p>
 
-        <div id="projects" class="container">
-            <h2>Projects</h2>
-            <p class="lead">
-                &ldquo;You can do anything you set your mind to.&rdquo;<br />- Benjamin Franklin
-            </p>
-
-            <hr />
-
-
-            <div class="row">
-
-                <!--I Need some projects! LOL-->
+                <hr />
 
 
+                <div class="row">
+
+                    <!--I Need some projects! LOL-->
+
+
+                </div>
             </div>
         </div>
-
 
 
         <div class="background-gray">
@@ -1094,14 +946,9 @@
                     <div class="col-md-6">
                         <ul class="no-bullets">
                             <li>
-                                <a href="http://twitter.com/Spankyy___" target="_blank">
-                                    <span class="fa-twitter-square"></span>
-                                    http://twitter.com/Spankyy___ </a>
-                            </li>
-                            <li>
                                 <a href="https://www.linkedin.com/in/jordan-spangenberg-480375178/" target="_blank">
-                                    <span class="fa-linkedin-square"></span>
-                                    https://www.linkedin.com/in/jordan-spangenberg-480375178/ </a>
+                                    <span class="fab fa-linkedin-in"></span>
+                                    linkedin.com/in/jordan-spangenberg</a>
                             </li>
                         </ul>
                     </div>
@@ -1109,9 +956,9 @@
                         <ul class="no-bullets">
                             <li>
                                 <a href="mailto:jordan.spang@gmail.com">
-                                    <span class="fa-google"></span>
+                                    <span class="fab fa-google"></span>
                                     <span style="unicode-bidi:bidi-override; direction: rtl;">
-                                       moc.liamg@gnaps.nadroj </span>
+                                        moc.liamg@gnaps.nadroj </span>
                                 </a>
                             </li>
                         </ul>
@@ -1122,10 +969,10 @@
 
             </div>
         </div>
-</div>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.slim.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.13.0/umd/popper.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.min.js"></script>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.13.0/umd/popper.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.min.js"></script>
 </body>
 
 </html>
