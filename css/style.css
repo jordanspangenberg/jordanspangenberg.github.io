@@ -158,6 +158,7 @@ svg {
   margin-top: 5px;
 }
 
+
 #profile .row>div {
   margin-bottom: 20px;
 }
@@ -181,10 +182,10 @@ svg {
   margin-bottom: 20px;
 }
 
-#experiences .experience p>strong {
-  display: block;
+#experiences .experience strong {
   padding-top: 8px;
   margin-bottom: 10px;
+  margin-left: 5px;
 }
 
 #experiences .experience .experience-details {
