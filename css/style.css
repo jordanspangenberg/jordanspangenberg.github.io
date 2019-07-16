@@ -165,8 +165,8 @@ svg {
 
 #profile .row>div img {
   width: 100%;
-  max-width: 246px;
-  height: auto;
+  /* max-width: 246px; */
+  height: 100%;
 }
 
 #profile-pic {
